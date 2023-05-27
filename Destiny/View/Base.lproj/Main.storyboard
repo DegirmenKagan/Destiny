@@ -67,6 +67,11 @@
                             <constraint firstAttribute="bottom" secondItem="UuA-7O-sqL" secondAttribute="bottom" id="hy0-ln-zsX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceButton1" destination="fvd-CC-Uwk" id="c3Q-vY-Yot"/>
+                        <outlet property="choiceButton2" destination="Yoy-vf-At4" id="lwg-1T-EmN"/>
+                        <outlet property="storyLabel" destination="zNJ-Wd-sbz" id="1rw-mG-O4d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 		3DE90CFA2A2219A60058BE5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE90CF82A2219A60058BE5F /* Main.storyboard */; };
 		3DE90CFC2A2219A70058BE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE90CFB2A2219A70058BE5F /* Assets.xcassets */; };
 		3DE90CFF2A2219A70058BE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE90CFD2A2219A70058BE5F /* LaunchScreen.storyboard */; };
+		3DE90D0A2A221A610058BE5F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE90D092A221A610058BE5F /* Story.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3DE90CFB2A2219A70058BE5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DE90CFE2A2219A70058BE5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE90D002A2219A70058BE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE90D092A221A610058BE5F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		3DE90CF12A2219A60058BE5F /* Destiny */ = {
 			isa = PBXGroup;
 			children = (
+				3DE90D062A221A080058BE5F /* Model */,
+				3DE90D072A221A0E0058BE5F /* View */,
+				3DE90D082A221A140058BE5F /* Controller */,
 				3DE90CF22A2219A60058BE5F /* AppDelegate.swift */,
 				3DE90CF42A2219A60058BE5F /* SceneDelegate.swift */,
-				3DE90CF62A2219A60058BE5F /* ViewController.swift */,
-				3DE90CF82A2219A60058BE5F /* Main.storyboard */,
 				3DE90CFB2A2219A70058BE5F /* Assets.xcassets */,
 				3DE90CFD2A2219A70058BE5F /* LaunchScreen.storyboard */,
 				3DE90D002A2219A70058BE5F /* Info.plist */,
 			);
 			path = Destiny;
+			sourceTree = "<group>";
+		};
+		3DE90D062A221A080058BE5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DE90D092A221A610058BE5F /* Story.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DE90D072A221A0E0058BE5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DE90CF82A2219A60058BE5F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DE90D082A221A140058BE5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DE90CF62A2219A60058BE5F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				3DE90CF72A2219A60058BE5F /* ViewController.swift in Sources */,
 				3DE90CF32A2219A60058BE5F /* AppDelegate.swift in Sources */,
 				3DE90CF52A2219A60058BE5F /* SceneDelegate.swift in Sources */,
+				3DE90D0A2A221A610058BE5F /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,11 +318,13 @@
 				DEVELOPMENT_TEAM = ABCM38598T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Destiny/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +348,13 @@
 				DEVELOPMENT_TEAM = ABCM38598T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Destiny/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

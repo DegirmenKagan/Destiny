@@ -14,6 +14,7 @@
 		3DE90CFC2A2219A70058BE5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE90CFB2A2219A70058BE5F /* Assets.xcassets */; };
 		3DE90CFF2A2219A70058BE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE90CFD2A2219A70058BE5F /* LaunchScreen.storyboard */; };
 		3DE90D0A2A221A610058BE5F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE90D092A221A610058BE5F /* Story.swift */; };
+		3DE90D0C2A2245D10058BE5F /* StoryLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE90D0B2A2245D10058BE5F /* StoryLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3DE90CFE2A2219A70058BE5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DE90D002A2219A70058BE5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE90D092A221A610058BE5F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		3DE90D0B2A2245D10058BE5F /* StoryLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				3DE90D092A221A610058BE5F /* Story.swift */,
+				3DE90D0B2A2245D10058BE5F /* StoryLogic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				3DE90CF72A2219A60058BE5F /* ViewController.swift in Sources */,
 				3DE90CF32A2219A60058BE5F /* AppDelegate.swift in Sources */,
+				3DE90D0C2A2245D10058BE5F /* StoryLogic.swift in Sources */,
 				3DE90CF52A2219A60058BE5F /* SceneDelegate.swift in Sources */,
 				3DE90D0A2A221A610058BE5F /* Story.swift in Sources */,
 			);
